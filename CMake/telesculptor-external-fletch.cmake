@@ -14,7 +14,7 @@ endif()
 ExternalProject_Add(fletch
   PREFIX ${TELESCULPTOR_BINARY_DIR}
   GIT_REPOSITORY "git://github.com/Kitware/fletch.git"
-  GIT_TAG 484873e39daabedfa389aeacbaf09a5529786bae
+  GIT_TAG 142e66413b19706ffa86d69d23093eec9129dba8
   #GIT_SHALLOW 1
   SOURCE_DIR ${TELESCULPTOR_EXTERNAL_DIR}/fletch
   BINARY_DIR ${TELESCULPTOR_EXTERNAL_DIR}/fletch-build
@@ -46,7 +46,7 @@ ExternalProject_Add(fletch
     -Dfletch_ENABLE_LevelDB:BOOL=OFF
     -Dfletch_ENABLE_OpenBLAS:BOOL=OFF    
     -Dfletch_ENABLE_OpenCV:BOOL=ON
-    -DOpenCV_SELECT_VERSION:STRING=3.4.0
+    -DOpenCV_SELECT_VERSION:STRING=4.2.0
     -Dfletch_ENABLE_OpenCV_FFmpeg:BOOL=ON
     -Dfletch_ENABLE_OpenCV_contrib:BOOL=ON
     -Dfletch_ENABLE_OpenCV_highgui:BOOL=ON
